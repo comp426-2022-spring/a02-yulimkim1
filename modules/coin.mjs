@@ -86,7 +86,15 @@ function countFlips(array) {
  */
 
 export function flipACoin(call) {
-
+  let coin_flip = coinFlip();
+  let match;
+  if (call == coin_flip) {
+    match = "win";
+  } else if (call != coin_flip) {
+    match = "lose";
+  }
+  let final = {call: call, flip: coin_flip, result: match};
+  return final;
 }
 
 
