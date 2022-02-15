@@ -93,9 +93,9 @@ export function countFlips(array) {
 export function flipACoin(call) {
   let coin_flip = coinFlip();
   let match = "";
-  if (coin_Flip == call) {
+  if (coin_flip == call) {
     match = "win";
-  } else if (coin_Flip != call) {
+  } else if (coin_flip != call) {
     match = "lose";
   }
   return {"call": call, "flip": coin_flip, "result": match};
