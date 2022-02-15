@@ -60,7 +60,7 @@ export function coinFlips(flips) {
  * @returns {{ heads: number, tails: number }}
  */
 
-function countFlips(array) {
+export function countFlips(array) {
   let heads_count = 0;
   let tails_count = 0;
   for (var i = 0; i < array.length; i++) {
