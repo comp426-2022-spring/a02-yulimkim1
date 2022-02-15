@@ -63,7 +63,6 @@ export function coinFlips(flips) {
 function countFlips(array) {
   let heads_count = 0;
   let tails_count = 0;
-  let flip_counts = {};
   for (var i = 0; i < array.length; i++) {
     if (array[i] == 'heads') {
       heads_count ++;
@@ -72,16 +71,13 @@ function countFlips(array) {
     }
   }
   if (heads_count == 0) {
-    let flip_counts = {tails: tails_count};
-    return flip_counts;
+    return {"tails": tails_count};
   }
   else if (tails_count == 0) {
-    let flip_counts = {heads: heads_count}
-    return flip_counts;
+    return {"heads": heads_count};
   }
   else {
-    let flip_counts = {heads: heads_count, tails: tails_count}
-    return flip_counts;
+    return {"heads": heads_count, "tails": tails_count};
   }
 }
 
@@ -98,14 +94,13 @@ function countFlips(array) {
 
 export function flipACoin(call) {
   let coin_flip = coinFlip();
-  let match;
+  let match = "";
   if (call == coin_flip) {
     match = "win";
   } else if (call != coin_flip) {
     match = "lose";
   }
-  let final = {call: call, flip: coin_flip, result: match};
-  return final;
+  return {"call": call, "flip": coin_flip, "result": match};
 }
 
 
