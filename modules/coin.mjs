@@ -76,9 +76,7 @@ export function countFlips(array) {
   else if (tails_count == 0) {
     return {"heads": heads_count};
   }
-  else {
-    return {"heads": heads_count, "tails": tails_count};
-  }
+  return {"heads": heads_count, "tails": tails_count};
 }
 
 /** Flip a coin!
