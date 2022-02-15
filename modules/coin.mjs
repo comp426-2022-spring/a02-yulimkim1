@@ -41,7 +41,8 @@ export function coinFlip() {
 export function coinFlips(flips) {
   let f = [];
   for (var i = 0; i < flips; i++) {
-    f[i] = coinFlip();
+    let flip = coinFlip();
+    f[i] = flip;
   }
   return f;
 }
