@@ -39,13 +39,13 @@ export function coinFlip() {
  */
 
 export function coinFlips(flips) {
-  let f = new Array();
+  let f = [];
   for (var i = 0; i < flips; i++) {
     f[i] = coinFlip();
   }
   return f;
 }
-console.log(coinFlips(10))
+//console.log(coinFlips(10))
 
 /** Count multiple flips
  * 
