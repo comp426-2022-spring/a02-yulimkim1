@@ -8,5 +8,5 @@ if (args.call == "heads" || args.call == "tails") {
     console.log(flipACoin(call))
 }
 else {
-    console.log("error")
+    console.log("Error: no input.\nUsage: node guess-flip.js --call=[heads|tails]")
 }
